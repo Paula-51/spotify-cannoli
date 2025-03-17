@@ -54,6 +54,8 @@ h3 {
     text-decoration: none;
     margin-bottom: 20PX;
 }
+.btn:hover {
+    background-color: darkblue;}
 
 /* style main */
 
