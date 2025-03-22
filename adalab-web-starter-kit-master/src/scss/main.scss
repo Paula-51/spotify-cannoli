@@ -13,10 +13,18 @@
  background-color: black;
  padding: 10px;
  color: white;
+ @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+ }
 }
 
 .nav__menu-text{
     display: none;
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px; }
 }
 .nav__logo{
     width: 15%;
@@ -27,6 +35,8 @@
     width: 3%;
     height: auto;
     object-fit: contain;
+    @media (min-width: 768px) {
+        display: none;  }
     
 }
 
@@ -77,7 +87,7 @@ h2 {
     padding-bottom: 50px;
 }
 
-.icono {
+.main__icono {
     width: 20%;
     height: auto;
     object-fit: contain;
@@ -111,26 +121,28 @@ footer{
     padding: 25px;
 }
 
-.idioma{
+.footer__idioma{
     display: flex;
     justify-content: end;
     gap: 25px;
 }
 
-.info2{
-    display: flex;
-    gap: 10px;
-    
-}
-
-.segunda{
+.footer__segunda{
     display: flex;
     padding-block : 10px;
     justify-content: space-between;
     
 }
 
-.copy{
+.footer__segunda-info2{
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+
+.footer__segunda-copy{
     text-align: right;
 }
 
@@ -140,21 +152,6 @@ footer{
 /*menu navegacion*/
 
 @media (min-width: 768px) {
- 
-    .nav{
-        display: flex;
-        align-items: center;
-    }
-    .menu {
-        display: none;
-    }
-
-    .menu-text{
-        display: flex;
-        justify-content: space-between;
-        gap: 15px;   
-        
-    }
 
     /*header tablet*/
 
