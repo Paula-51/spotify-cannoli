@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.scss">
+    <title>Sign Up</title>
+</head>
+<body>
+    <header>
+        <img src="./images/logo-black.png" alt="logo-black" class="logo-black">
+        <h1>Regístrate gratis para escuchar.</h1>
+        <button><a href="https://www.facebook.com/login/register/" target="_blank">Regístrate con Facebook</a></button>
+        <button><a href="https://www.google.com" target="_blank">Regístrate con Google</a></button>
+    </header>
+    <main>
+        <h2>Registrate con tu correo electronico</h2>
+        <form action="/signup" method="post">
+            <div>
+                <label class="label" for="correo">¿Cuál es tu correo electrónico?</label>
+                <input id="correo" name="correo" type="email" placeholder="Pon tu correo electrónico." />
+            </div>
+            <div>
+                <label class="label" for="confirma-correo">Confirma el correo electrónico</label>
+                <input id="confirma-correo" name="confirma-correo" type="email" placeholder="vuelve a poner tu correo electrónico." />
+            </div>
+            <div>
+                <label class="label" for="password">Crea una contraseña</label>
+                <input id="password" name="password" type="password" placeholder="Crea una contraseña." />
+            </div>
+            <div>
+                <label class="label" for="name">¿Cómo quieres que te llamemos?</label>
+                <input id="name" name="name" type="text" placeholder="Pon un nombre de perfil." />
+                <p>Esto aparece en tu perfil</p>
+            </div>
+            <div>
+                <label class="label" for="birth-date">¿Cuál es tu fecha de nacimiento?</label>
+                <input id="birth-date" name="birth-date" type="date"/>
+            </div>
+            <div>
+                <label class="label" for="gender">¿Cuál es tu género?</label>
+                <input type="radio" name="gender" id="gender" value="Hombre">Hombre</label>
+                <input type="radio" name="gender" id="gender" value="Mujer">Mujer</label>
+                <input type="radio" name="gender" id="gender" value="No binario">No binario</label>
+            </div>
+            <div>
+                <input type="checkbox" name="news" id="news" value="Sí"></label>
+                <label class="label" for="news">Quiero que me enviéis novedades y ofertas de Spotify</label>
+            </div>
+            <div>
+                <input type="checkbox" name="privacy" id="privacy" value="Sí"></label>
+                <label class="privacy" for="privacy">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae placeat eveniet facilis perspiciatis veritatis molestias ex, voluptatum molestiae magni ducimus quo earum dolores iusto impedit at necessitatibus, repudiandae praesentium blanditiis.</label>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
