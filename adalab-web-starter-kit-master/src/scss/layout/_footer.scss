@@ -1,10 +1,33 @@
-@use '../core/variables' as vars;
 
-.page__footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    padding: 1rem;
-    color: vars.$color-secondary;
+
+footer{
+    color:white;
+    background-color: black;
+    padding: 25px;
 }
+
+.footer__idioma{
+    display: flex;
+    justify-content: end;
+    gap: 25px;
+}
+
+.footer__segunda{
+    display: flex;
+    padding-block : 10px;
+    justify-content: space-between;
+    
+}
+
+.footer__segunda-info2{
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+
+.footer__segunda-copy{
+    text-align: right;
+}
+

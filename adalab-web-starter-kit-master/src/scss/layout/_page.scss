@@ -1,9 +1,51 @@
 @use '../core/variables' as vars;
 
-body {
-    padding: 2rem;
-    height: 100vh;
-    background-image: url('../images/bg-adalab.png');
-    background-color: vars.$color-bg;
-    font-family: vars.$font-main;
+main {
+    padding-inline: 25px;
 }
+
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    padding-inline: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+article {
+    @media (min-width: 768px) {
+        display: flex;
+        justify-content: left;
+        gap: 15px; 
+        padding-left: 5%;}
+}
+
+.main__icono {
+    width: 20%;
+    max-width: 65px;
+    height: auto;
+    object-fit: contain;
+    margin-top: -10px;
+
+}
+
+article{
+    display: flex;
+    padding-block: 30px;
+    
+}
+
+.info{
+    margin-left: 30px;
+    line-height: 2;
+}
+
+h4 {
+    font-size: 22px;
+}
+
+.ilegible {
+    font-size: 12px;
+}
+
